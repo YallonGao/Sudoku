@@ -38,6 +38,7 @@ if __name__ == '__main__':
         size=(1920, 960),
         # resizable=(False, False),
     )
+    
     Application(app, sudoku=grid.sudoku_old, notes=grid.notes, ppppp=0)
     Application(app, sudoku=grid.sudoku, notes=grid.notes, ppppp=1)
     ttk.Label(app, text="共%d步，用时%s秒" % (len_all, time_end - time_start)).grid(row=1, column=0, columnspan=2)
